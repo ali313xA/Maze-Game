@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #bbe29a;
+    display: flex;
+    flex-direction: row; /* Use column if you want dropdown and grid stacked vertically */
+    justify-content: center; /* Centers items vertically */
+    align-items: center; /* Centers items horizontally */
+    height: 100vh; /* Ensures the body takes the full viewport height */
+    margin: 0; /* Removes any default body margin */
+    gap: 50px;
+  }
+  
+  .dropdown {
+    position: relative;
+    width: 300px; /* Adjust width for dropdown as needed */
+    margin-bottom: 20px; /* Adds space between dropdown and grid */
+  }
+  
+  #choose {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .left {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #choose:hover {
+    background-color: #45a049;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100%;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown-content button {
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-content button:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
